@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AgregarDispositivo">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="149dp"
+        android:layout_marginTop="27dp"
+        android:text="@string/AgregarDispositivo"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="149dp" />
+
+    <EditText
+        android:id="@+id/NombreDispositivo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="105dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:ignore="RtlCompat" />
+
+    <EditText
+        android:id="@+id/idMarcar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/NombreDispositivo"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/NombreDispositivo"
+        android:layout_marginTop="192dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:ignore="RtlCompat" />
+
+    <EditText
+        android:id="@+id/idPuerto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/NombreDispositivo"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/NombreDispositivo"
+        android:layout_marginBottom="190dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:ignore="RtlCompat" />
+
+    <Button
+        android:id="@+id/btnCancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="69dp"
+        android:layout_marginEnd="-149dp"
+        android:layout_toStartOf="@+id/textView2"
+        android:text="@string/cancelar"
+        tools:ignore="RtlCompat" />
+
+    <Button
+        android:id="@+id/btnAgregar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/btnCancelar"
+        android:layout_marginEnd="97dp"
+        android:text="@string/agregar"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="97dp"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/textNombreDispositivo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/NombreDispositivo"
+        android:layout_marginTop="79dp"
+        android:text="Nombre del Dispositivo"
+        android:layout_alignLeft="@+id/NombreDispositivo"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/idMarcar"
+        android:layout_alignStart="@+id/NombreDispositivo"
+        android:layout_marginBottom="-192dp"
+        android:text="Marca"
+        android:layout_alignLeft="@+id/NombreDispositivo"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/idPuerto"
+        android:layout_alignStart="@+id/NombreDispositivo"
+        android:text="Puerto"
+        android:layout_alignLeft="@+id/NombreDispositivo"
+        tools:ignore="RtlCompat" />
+
+</RelativeLayout>

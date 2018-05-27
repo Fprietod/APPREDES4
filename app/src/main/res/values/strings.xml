@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Redesproyecto</string>
+    <string name="AgregarDispositivo">TextView</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="agregar">Agregar</string>
+
+</resources>

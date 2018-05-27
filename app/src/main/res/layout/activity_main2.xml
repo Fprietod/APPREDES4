@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".Nodos"
+
+    >
+
+
+    <TextView
+        android:id="@+id/txtDispositvo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:text="Dispositivos"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="+"
+        android:onClick="agregardispositivo"
+
+
+    />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/container1"
+        android:layout_width="286dp"
+        android:layout_height="193dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="69dp"
+        android:visibility="invisible"
+        tools:ignore="RtlCompat">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="267dp"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/txtNombrelabel"
+                android:layout_width="115dp"
+                android:layout_height="42dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="16dp"
+                android:text="Nombre"
+                android:textSize="18sp"
+                tools:ignore="InvalidId" />
+
+            <TextView
+                android:id="@+id/txtNombre"
+                android:layout_width="109dp"
+                android:layout_height="42dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="-45dp"
+
+                android:textSize="18sp"
+                tools:ignore="InvalidId" />
+
+            <TextView
+                android:id="@+id/txtMarcalabel"
+                android:layout_width="109dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="16dp"
+                android:text="Marca"
+                android:textSize="18sp"
+                tools:ignore="InvalidId" />
+
+
+            <TextView
+                android:id="@+id/txtMarca"
+                android:layout_width="109dp"
+                android:layout_height="42dp"
+                android:layout_marginLeft="146dp"
+                android:layout_marginTop="-45dp"
+
+                android:textSize="18sp"
+                tools:ignore="InvalidId" />
+
+            <TextView
+                android:id="@+id/txtPuertolabel"
+                android:layout_width="115dp"
+                android:layout_height="42dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="16dp"
+                android:text="Puerto"
+                android:textSize="18sp"
+                tools:ignore="InvalidId" />
+
+            <TextView
+                android:id="@+id/txtPuerto"
+                android:layout_width="115dp"
+                android:layout_height="42dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="-43dp"
+                android:textSize="18sp"
+                tools:ignore="InvalidId" />
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>
