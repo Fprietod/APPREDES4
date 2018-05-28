@@ -14,6 +14,15 @@ public class AgregarDispositivo extends AppCompatActivity implements  View.OnCli
    public EditText textomarca;
    public EditText textopuerto;
    public Button btnEnviarDatos;
+   //----------------------------------container1
+    public EditText textonombrelabel2;
+    public EditText textomarca2;
+    public EditText textopuerto3;
+    //-------------------------------------container2
+    public EditText textonombrelabel3;
+    public EditText textomarca3;
+    public EditText textopuerto4;
+    //-------------------------------------------container3
 
 
 
@@ -36,10 +45,12 @@ public class AgregarDispositivo extends AppCompatActivity implements  View.OnCli
             String dato; //capturar informacion
             String dato2;
             String dato3;
+            //Hssta aquí es el container 1
             Intent intent; //Para pasar actividad
             dato=textonombre.getText().toString();
             dato2= textomarca.getText().toString();
             dato3 = textopuerto.getText().toString();
+            //Hasta aquí es el container |
             intent = new  Intent(getApplicationContext(),Nodos.class);
             intent.putExtra("DATOS",dato);
             intent.putExtra("DATOS2",dato2);
